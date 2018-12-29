@@ -608,6 +608,16 @@ var AppModule = /** @class */ (function () {
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
                 __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_7__pages_vars_vars__["a" /* VarsPage */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_arith_arith__["a" /* ArithPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_arrays_arrays__["a" /* ArraysPage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_classes_classes__["a" /* ClassesPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_conditionals_conditionals__["a" /* ConditionalsPage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_functions_functions__["a" /* FunctionsPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_loops_loops__["a" /* LoopsPage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_objects_objects__["a" /* ObjectsPage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_operators_operators__["a" /* OperatorsPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_types_types__["a" /* TypesPage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
