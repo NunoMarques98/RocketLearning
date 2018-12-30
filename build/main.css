@@ -25714,7 +25714,7 @@ pre {
 }
 
 p {
-  text-align: justify;
+  text-align: justify !important;
   line-height: 1.8;
   font-family: 'Lato', sans-serif !important;
 }
@@ -25752,6 +25752,15 @@ page-arith ion-row.grid-header {
 
 page-arith ion-row.grid-code {
   text-align: left;
+}
+
+page-conditionals h1 {
+  color: #00ffe9;
+  font-size: 35px;
+}
+
+page-conditionals h2 {
+  margin-bottom: 30px;
 }
 
 page-operators h1 {
