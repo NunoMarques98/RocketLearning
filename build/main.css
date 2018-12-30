@@ -25719,6 +25719,10 @@ p {
   font-family: 'Lato', sans-serif !important;
 }
 
+strong {
+  color: #00ffe9;
+}
+
 page-arith h1 {
   color: #00ffe9;
   font-size: 35px;
@@ -25779,6 +25783,20 @@ page-operators ion-row.grid-header {
 
 page-operators ion-row.grid-code {
   text-align: left;
+}
+
+page-types h1 {
+  color: #00ffe9;
+  font-size: 35px;
+}
+
+page-types h2 {
+  margin-bottom: 30px;
+}
+
+page-types ion-grid {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 page-vars h1 {
