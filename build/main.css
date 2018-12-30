@@ -25713,7 +25713,7 @@ pre {
   width: 80% !important;
 }
 
-p {
+p, ul {
   width: 80%;
   margin: 20px auto !important;
   text-align: justify !important;
@@ -25780,6 +25780,15 @@ page-functions h1 {
 }
 
 page-functions h2 {
+  margin-bottom: 30px;
+}
+
+page-loops h1 {
+  color: #00ffe9;
+  font-size: 35px;
+}
+
+page-loops h2 {
   margin-bottom: 30px;
 }
 
