@@ -1,10 +1,10 @@
-webpackJsonp([10],{
+webpackJsonp([9],{
 
 /***/ 100:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ClassesPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ArraysPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -18,30 +18,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-/**
- * Generated class for the ClassesPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var ClassesPage = /** @class */ (function () {
-    function ClassesPage(navCtrl, navParams) {
+var ArraysPage = /** @class */ (function () {
+    function ArraysPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    ClassesPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad ClassesPage');
+    ArraysPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ArraysPage');
+        hljs.initHighlighting.called = false;
+        hljs.initHighlighting();
     };
-    ClassesPage = __decorate([
+    ArraysPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-classes',template:/*ion-inline-start:"C:\Users\nuno1\OneDrive\Documentos\Estudar\3º ano\1º Semestre\PCM\trabalhos\rocket\src\pages\classes\classes.html"*/'<!--\n  Generated template for the ClassesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>4.Classes</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\nuno1\OneDrive\Documentos\Estudar\3º ano\1º Semestre\PCM\trabalhos\rocket\src\pages\classes\classes.html"*/,
+            selector: 'page-arrays',template:/*ion-inline-start:"C:\Users\nuno1\OneDrive\Documentos\Estudar\3º ano\1º Semestre\PCM\trabalhos\rocket\src\pages\arrays\arrays.html"*/'<!--\n  Generated template for the ArraysPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-content padding>\n  <ion-row>\n    <ion-col col-12>\n        <h1>7. Listas</h1>\n    </ion-col>\n  </ion-row>\n  <ion-row>\n    <ion-col col-12>\n      <p>\n        Quando falámos em tipos de variáveis, mencionámos o tipo <strong>Array</strong>. No entanto a definição foi muito vaga. Vamos a uma \n        definição mais específica: uma lista ( array ) é uma variável que pode ter mais do que um valor ao mesmo tempo. Por exemplo, imagina que \n        queres fazer uma lista de compras, se não usares uma lista, tens de o fazer apenas com uma variável de cada vez.\n      </p>\n      <pre>\n        <code class="javascript hljs">\n            var a = \'ananás\';\n            var b = \'bananas\';\n            var c = \'carangueijo\';\n        </code>\n      </pre>\n      <p>Esta técnica até pode resultar para poucos elementos. E se for, digamos, para 1000 elementos? Agora começa a complicar.\n        É nestas alturas que as listas começam a brilhar. Vejamos o código anterior mas agora com listas.\n      </p>\n      <pre>\n          <code class="javascript hljs">\n              var compras = [\'ananás\', \'bananas\', \'carangueijo\'];\n          </code>\n      </pre>\n      <p>Surge uma questão. Como podemos aceder a um elemento de uma lista. Nada podia ser mais simples. Basta escrever o nome \n        da lista seguido de <strong>[]</strong> e entre eles a posição do elemento na lista. A posição do primeiro elemento é <strong>0</strong>.\n      </p>\n      <pre>\n          <code class="javascript hljs">\n              var compras = [\'ananás\', \'bananas\', \'carangueijo\'];\n\n              console.log(compras[0]); // \'ananás\';\n              console.log(compras[1]); // \'bananas\';\n              console.log(compras[2]); // \'carangueijo\';\n          </code>\n      </pre>\n      <p>\n        Para mudar o valor de um elemento de uma lista só precisamos de aceder a esse elemento e mudar o valor.\n      </p>\n      <pre>\n        <code>\n            var compras = [\'ananás\', \'bananas\', \'carangueijo\'];\n\n            console.log(compras[0]); // \'ananás\';\n            \n            compras[0] = \'iogurte\';\n\n            console.log(compras[0]); // \'iogurte\';\n        </code>\n      </pre>\n      <p>Podemos saber quantos elementos estão na lista através da propriedade <strong>.length</strong>.</p>\n      <pre>\n          <code>\n              var compras = [\'ananás\', \'bananas\', \'carangueijo\'];\n  \n              console.log(compras.length); // 3;\n          </code>\n        </pre>\n      <p>\n        Para aceder ao último elemento, e sabendo que as posições começam em 0:\n      </p>\n      <pre>\n        <code>\n            var compras = [\'ananás\', \'bananas\', \'carangueijo\'];\n\n            console.log(compras[compras.length - 1]); // \'carangueijo\';\n        </code>\n      </pre>\n      <p>\n        Podemos ainda adicionar elementos a ao final de uma lista usando o método <strong>.push(elemento)</strong>.\n      </p>\n      <pre>\n          <code>\n              var compras = [\'ananás\', \'bananas\', \'carangueijo\'];\n  \n              console.log(compras); // [\'ananás\', \'bananas\', \'carangueijo\'];\n\n              compras.push(\'morangos\');\n\n              console.log(compras); // [\'ananás\', \'bananas\', \'carangueijo\', \'morangos\'];\n          </code>\n        </pre>\n    </ion-col>\n  </ion-row>\n</ion-content>\n'/*ion-inline-end:"C:\Users\nuno1\OneDrive\Documentos\Estudar\3º ano\1º Semestre\PCM\trabalhos\rocket\src\pages\arrays\arrays.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-    ], ClassesPage);
-    return ClassesPage;
+    ], ArraysPage);
+    return ArraysPage;
 }());
 
-//# sourceMappingURL=classes.js.map
+//# sourceMappingURL=arrays.js.map
 
 /***/ }),
 
@@ -49,7 +45,7 @@ var ClassesPage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ArithPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConditionalsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -63,30 +59,71 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var ArithPage = /** @class */ (function () {
-    function ArithPage(navCtrl, navParams) {
+var ConditionalsPage = /** @class */ (function () {
+    function ConditionalsPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    ArithPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad ArithPage');
+    ConditionalsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ConditionalsPage');
         hljs.initHighlighting.called = false;
         hljs.initHighlighting();
     };
-    ArithPage = __decorate([
+    ConditionalsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-arith',template:/*ion-inline-start:"C:\Users\nuno1\OneDrive\Documentos\Estudar\3º ano\1º Semestre\PCM\trabalhos\rocket\src\pages\arith\arith.html"*/'<!--\n  Generated template for the ArithPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-content padding>\n  <ion-row class="grid-header">\n    <ion-col col-12>\n        <h1>3. Operações Aritméticas</h1>\n    </ion-col>\n  </ion-row>\n  <ion-row class="grid-header" justify-content-center align-items-center>\n    <ion-col col-12>\n      <p>\n        Guardar valores numa variável é fixe, mas mais fixe ainda é poder fazer operações usando-os e manipulando-os para \n        atingir os objetivos do nosso programa. O que podemos fazer com eles? Bem, uma parte da resposta está na tabela abaixo. \n        Para obter o resto das operações, passa para a página seguinte.\n      </p>\n    </ion-col>\n  </ion-row>\n  <ion-grid>\n    <ion-row>\n      <ion-col col-6>Operador</ion-col>\n      <ion-col col-6>Descrição</ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-6>+</ion-col>\n      <ion-col col-6>Soma</ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-6>-</ion-col>\n      <ion-col col-6>Subtração</ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-6>*</ion-col>\n      <ion-col col-6>Multiplicação</ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-6>**</ion-col>\n      <ion-col col-6>Exponenciação</ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-6>/</ion-col>\n      <ion-col col-6>Divisão</ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-6>%</ion-col>\n      <ion-col col-6>Módulo ou resto de divisão</ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-6>++</ion-col>\n      <ion-col col-6>Incremento (Somar 1)</ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-6>--</ion-col>\n      <ion-col col-6>Decremento (Subtrair 1)</ion-col>\n    </ion-row>\n  </ion-grid>\n  <ion-grid>\n    <ion-row class="grid-header">\n      <ion-col col-12>\n        <h2>Exemplos</h2>\n      </ion-col>\n    </ion-row>\n    <ion-row class="grid-header grid-code" justify-content-center align-items-center>\n      <ion-col col-12>\n        <pre>\n          <code class="javascript hljs">\n            var x = 10;\n            var y = 5;\n\n            var z = x + y; // z = 15\n            var w = x - y; // w = 5\n\n            var t = x * y; // t = 50\n            var e = x ** y; // e = 100000\n\n            var d = x / y; // d = 2\n            var m = x % y; // m = 0\n\n            var n = x++; // n = 11\n            var i = y--; // i = 4\n\n          </code>\n        </pre>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"C:\Users\nuno1\OneDrive\Documentos\Estudar\3º ano\1º Semestre\PCM\trabalhos\rocket\src\pages\arith\arith.html"*/,
+            selector: 'page-conditionals',template:/*ion-inline-start:"C:\Users\nuno1\OneDrive\Documentos\Estudar\3º ano\1º Semestre\PCM\trabalhos\rocket\src\pages\conditionals\conditionals.html"*/'<!--\n  Generated template for the ConditionalsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-content padding>\n  <ion-row>\n    <ion-col col-12>\n        <h1>5. Condicionais</h1>\n    </ion-col>\n  </ion-row>\n  <ion-row justify-content-center align-items-center>\n    <ion-col col-12>\n      <p>\n        Estruturas condicionais são usadas para realizar diferentes ações com base num decisão. Imagina que vais a uma discoteca e te\n        perguntam a idade à entrada. Com base na tua idade podem ser tomadas duas decisões: se fores maior de idade, podes entrar; caso \n        contrário, não o podes fazer. Ou seja, com base num condição booleana ( uma condição que resulta em verdade ou falso ) é tomada \n        uma ação. Para isso temos a seguinte estrutura. Aqui vão dar jeito os conhecimentos de operadores lógicos e de comparação de que \n        falámos à pouco.\n      </p>\n      <pre>\n        <code class="javascript hljs">\n            var idade = 18;\n\n            if (idade >= 18) {{\'{\'}}\n\n              console.log("Podes entrar");\n            {{\'}\'}}\n\n            else {{\'{\'}}\n\n              console.log("Vai para casa puto!");\n            {{\'}\'}}\n        </code>\n      </pre>\n      <p>\n        <strong>idade >= 18</strong> é a condição que te vai permitir entrar ou não na discoteca. Lembra-te, a expressão que está entre <strong>()</strong> na cláusula <strong>if</strong> tem \n        de resultar sempre em <strong>true</strong> ou <strong>false</strong>. Se o que está entre <strong>()</strong> for verdade, o que está \n        dentro das chavetas do <strong>if</strong> executa. Caso contrário, o que está dentro das chavetas do <strong>else</strong> irá executar.\n      </p>\n      <p>E se quisermos ter mais condições de decisão? Bem basta a acrescentar um cláusula <strong>else if() {{\'{\'}}{{\'}\'}}</strong></p>\n      <pre>\n          <code class="javascript hljs">\n              var idade = 18;\n  \n              if (idade >= 18) {{\'{\'}}\n  \n                console.log("Podes entrar");\n              {{\'}\'}}\n\n              else if (idade > 15 && idade <= 17) {{\'{\'}}\n  \n                console.log("Podes entrar acompanhado por um adulto");\n              {{\'}\'}}\n  \n              else {{\'{\'}}\n  \n                console.log("Vai para casa puto!");\n              {{\'}\'}}\n          </code>\n        </pre>\n    </ion-col>\n  </ion-row>\n</ion-content>\n'/*ion-inline-end:"C:\Users\nuno1\OneDrive\Documentos\Estudar\3º ano\1º Semestre\PCM\trabalhos\rocket\src\pages\conditionals\conditionals.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-    ], ArithPage);
-    return ArithPage;
+    ], ConditionalsPage);
+    return ConditionalsPage;
 }());
 
-//# sourceMappingURL=arith.js.map
+//# sourceMappingURL=conditionals.js.map
 
 /***/ }),
 
 /***/ 102:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FunctionsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var FunctionsPage = /** @class */ (function () {
+    function FunctionsPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    FunctionsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad FunctionsPage');
+        hljs.initHighlighting.called = false;
+        hljs.initHighlighting();
+    };
+    FunctionsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-functions',template:/*ion-inline-start:"C:\Users\nuno1\OneDrive\Documentos\Estudar\3º ano\1º Semestre\PCM\trabalhos\rocket\src\pages\functions\functions.html"*/'<!--\n  Generated template for the FunctionsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-content padding>\n  <ion-row>\n    <ion-col col-12>\n        <h1>6. Funções</h1>\n    </ion-col>\n  </ion-row>\n  <ion-row justify-content-center align-items-center>\n    <ion-col col-12>\n      <p>\n        Primeiro, caso estejas a pensar na matemática, estas funções não têm esse signifcado. Em programação uma função é um \n        pedaço de código que executa quando é chamado/invocado. Uma função pode receber argumentos e pode devolver um valor, \n        seja ele de que tipo for.\n      </p>\n      <pre>\n        <code class="javascript hljs">\n            function mais_dois(x) {{\'{\'}}\n\n                return x + 2;\n\n            {{\'}\'}}\n\n            var x = 2;\n\n            console.log(mais_dois(x)); // 4\n        </code>\n      </pre>\n      <p>\n        Um função é declarada da seguinte forma <strong>function (argumento 1, argumento 2, ..., argumento n) {{\'{\'}} bloco de código {{\'}\'}}</strong>.\n        ATENÇÃO os argumentos passados numa chamada de função são copiados, ou seja, todas as operações feitas sobre esse argumento \n        não se aplicam fora do corpo da função. Essa cópia só existe dentro do corpo da função e todas as variáveis declaradas dentro do corpo \n        da função só existem aí, isto é, não são visíveis de fora da função. Chamam-se variáveis <strong>locais</strong>.\n      </p>\n      <pre>\n          <code class="javascript hljs">\n              function mais_dois(x) {{\'{\'}}\n\n                  var y = x + 2\n\n                  return y;\n              {{\'}\'}}\n\n              console.log(y); // Erro, y não está definido\n  \n              var x = 2;\n              console.log(x); // 2\n\n              mais_dois(x);\n  \n              console.log(x); // 2\n\n              x = mais_dois(x);\n              console.log(x); // 4\n\n          </code>\n        </pre>\n      <p>\n        Assim que o JavaScript encontra o <strong>return</strong> ele para a execução do código da função e retorna o resultado da expressão, ou o valor\n        que estiver à sua frente.\n      </p>\n      <pre>\n      <code class="javascript hljs">\n          function mais_dois(x) {{\'{\'}}\n\n              return x + 2; // Retorna o resulta de x + 2\n\n              var y = x + 4; // Não vai executar, está abaixo do return\n          {{\'}\'}}\n\n      </code>\n    </pre>\n      <p>\n        Só se dissermos que o valor de x passa a ser o valor de retorno da função é que, efetivamente, lhe mudamos o valor.\n        Para chamar uma função, basta escrever o nome dela seguido de <strong>()</strong> e dentro dos mesmos passar os argumentos \n        <strong>mais_dois(x)</strong>, por exemplo.\n      </p>\n      <p>\n        Porquê usar funções? Porque podemos reutilizar código. Basta definir uma vez para poder usar várias vezes e basta passar \n        argumentos diferentes para obter resultados diferentes.\n      </p>\n    </ion-col>\n  </ion-row>\n</ion-content>\n'/*ion-inline-end:"C:\Users\nuno1\OneDrive\Documentos\Estudar\3º ano\1º Semestre\PCM\trabalhos\rocket\src\pages\functions\functions.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+    ], FunctionsPage);
+    return FunctionsPage;
+}());
+
+//# sourceMappingURL=functions.js.map
+
+/***/ }),
+
+/***/ 103:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -131,7 +168,7 @@ var LoopsPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 103:
+/***/ 104:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -173,47 +210,6 @@ var ObjectsPage = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=objects.js.map
-
-/***/ }),
-
-/***/ 104:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TypesPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var TypesPage = /** @class */ (function () {
-    function TypesPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    TypesPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad TypesPage');
-        hljs.initHighlighting.called = false;
-        hljs.initHighlighting();
-    };
-    TypesPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-types',template:/*ion-inline-start:"C:\Users\nuno1\OneDrive\Documentos\Estudar\3º ano\1º Semestre\PCM\trabalhos\rocket\src\pages\types\types.html"*/'<!--\n  Generated template for the TypesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-content padding>\n  <ion-row>\n    <ion-col col-12>\n        <h1>2. Tipos de Dados</h1>\n    </ion-col>\n  </ion-row>\n    <ion-row justify-content-center align-items-center>\n      <ion-col col-12>\n        \n          <p>\n            Antes de passarmos às operações que se podem fazer com as variáveis que aprendemos no capitulo anterior, precisamos \n            de esclarecer o conceito de tipos de variável. Os tipos permitem-nos distinguir variáveis e as operações que se podem \n            realizar sobre elas. Isto é, as operações que podemos fazer com</p>\n            <pre><code class="javascript hljs">var x = 1;</code></pre>\n            <p> que é um Number, são diferentes das operações que se fazem com</p>\n            <pre><code class="javascript hljs">var x = \'1\';</code></pre>\n            <p>que é uma String.</p>\n        \n          <p>\n            Posto isto, podemos distinguir os seguintes tipos de variáveis:</p>\n            <pre><code class="javascript hljs">\n              var x = 1;\n              var y = 1.2;\n              var z = -1;\n              var w = -1.2;\n\n              var t = 2e5; // Notação científica\n            </code></pre> \n            <p>Aqui as variáveis x, y, z e w são do tipo <strong>Number</strong>. O tipo <strong>Number</strong> engloda todos os tipos numéricos, ou seja, todos os números\n            inteiros e reais, positivos ou negativos. </p> \n          \n            <pre><code class="javascript hljs">\n                var x = \'Isto é uma string\';\n                var y = \'a\';\n                var z = \'\';\n            </code> </pre> \n\n           <p>As variáveis x, y e z são <strong>String</strong>, isto é, são aquilo a que chamamos texto. Uma <strong>String</strong> pode ser um conjunto de \n            vários caracteres, um único caracter ou até mesmo vazia. </p> \n            \n           <pre> <code class="javascript hljs">\n                var x = true;\n                var y = false;\n            </code> </pre>\n\n           <p> As variáveis x e y são do tipo <strong>Boolean</strong>, ou seja, têm um valor de verdade ( true ou false ) associado. Este tipo \n            de variáveis é principalmente em decisão condicional, como veremos mais à frente. </p>\n            \n\n           <pre> <code class="javascript hljs">\n              var x;\n            </code> </pre>\n\n           <p> Neste caso, a variável x tem tipo <strong>Undefined</strong>, trocando por miúdos, a variável x existe mas não tem valor associado.\n            Mais simples ainda, existe uma caixa com o nome x mas não tem nada guardado. </p>\n            \n           <pre> <code class="javascript hljs">\n              var x = "E-Learning javascript";\n              x = null;\n            </code> </pre>\n\n           <p> O tipo <strong>Null</strong> indica que a variável não existe, posto de outra forma, <strong>Null</strong> designa o vazio e não existência. Conforme \n            está escrito acima, podemos fazer com que uma variável deixe de existir atribuindo-lhe o valor null. </p>\n            \n           <pre> <code class="javascript hljs">\n                var lista = [\'ovos\', \'bananas\', \'fiambre\'];\n            </code> </pre>\n\n           <p> O tipo <strong>Array</strong> serve para guardar numa variável uma lista de elementos, desde que esses elementos\n            sejam todos do mesmo tipo, isto é, não podemos guardar elementos com o tipo <strong>Number</strong> e elementos com \n            o tipo <strong>String</strong> na mesma lista. </p>\n\n           <pre> <code class="javascript hljs">\n              var carro = {{\'{\'}} portas: 5, lugares: 5, velocidade_máxima: 200, matricula: \'AB-12-CD\' {{\'}\'}};\n            </code> </pre>\n\n            <p>Há ainda mais um tipo, o tipo <strong>Object</strong>, que server para representar, como o nome indica, objectos do mundo real.\n            Não te preocupes se não percebeste o que isto significa, os objectos terão um capitulo específico. Por agora fica \n            com esta definição.</p>\n\n           <p>Como podes ver, pelo exemplo do tipo <strong>Null</strong>, os tipos em JavaScript são dinâmicos, uma variável\n            num dado instante tem um tipo mas pode ser modificado. </p>\n\n           <pre><code class="javascript hljs">\n                var x = 10; // x é um Number\n                x = \'Tipo String\'; // x é uma String\n            </code> </pre> \n            \n           <p> Para verificarmos o tipo de uma variável, é aconselhável usar a função <strong>typeof</strong>() como segue. </p>\n\n           <pre> <code class="javascript hljs">\n                var x = 10; // x é um Number\n                console.log(typeof(x)); // Number\n\n                var y = \'Dezembro\';\n                console.log(typeof(y)); // String\n\n                var z = true;\n                console.log(typeof(z)); // Boolean\n            </code> </pre> \n      </ion-col>\n    </ion-row>\n  \n</ion-content>\n'/*ion-inline-end:"C:\Users\nuno1\OneDrive\Documentos\Estudar\3º ano\1º Semestre\PCM\trabalhos\rocket\src\pages\types\types.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-    ], TypesPage);
-    return TypesPage;
-}());
-
-//# sourceMappingURL=types.js.map
 
 /***/ }),
 
@@ -259,88 +255,6 @@ var VarsPage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FunctionsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var FunctionsPage = /** @class */ (function () {
-    function FunctionsPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    FunctionsPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad FunctionsPage');
-        hljs.initHighlighting.called = false;
-        hljs.initHighlighting();
-    };
-    FunctionsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-functions',template:/*ion-inline-start:"C:\Users\nuno1\OneDrive\Documentos\Estudar\3º ano\1º Semestre\PCM\trabalhos\rocket\src\pages\functions\functions.html"*/'<!--\n  Generated template for the FunctionsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-content padding>\n  <ion-row>\n    <ion-col col-12>\n        <h1>6. Funções</h1>\n    </ion-col>\n  </ion-row>\n  <ion-row justify-content-center align-items-center>\n    <ion-col col-12>\n      <p>\n        Primeiro, caso estejas a pensar na matemática, estas funções não têm esse signifcado. Em programação uma função é um \n        pedaço de código que executa quando é chamado/invocado. Uma função pode receber argumentos e pode devolver um valor, \n        seja ele de que tipo for.\n      </p>\n      <pre>\n        <code class="javascript hljs">\n            function mais_dois(x) {{\'{\'}}\n\n                return x + 2;\n\n            {{\'}\'}}\n\n            var x = 2;\n\n            console.log(mais_dois(x)); // 4\n        </code>\n      </pre>\n      <p>\n        Um função é declarada da seguinte forma <strong>function (argumento 1, argumento 2, ..., argumento n) {{\'{\'}} bloco de código {{\'}\'}}</strong>.\n        ATENÇÃO os argumentos passados numa chamada de função são copiados, ou seja, todas as operações feitas sobre esse argumento \n        não se aplicam fora do corpo da função. Essa cópia só existe dentro do corpo da função e todas as variáveis declaradas dentro do corpo \n        da função só existem aí, isto é, não são visíveis de fora da função. Chamam-se variáveis <strong>locais</strong>.\n      </p>\n      <pre>\n          <code class="javascript hljs">\n              function mais_dois(x) {{\'{\'}}\n\n                  var y = x + 2\n\n                  return y;\n              {{\'}\'}}\n\n              console.log(y); // Erro, y não está definido\n  \n              var x = 2;\n              console.log(x); // 2\n\n              mais_dois(x);\n  \n              console.log(x); // 2\n\n              x = mais_dois(x);\n              console.log(x); // 4\n\n          </code>\n        </pre>\n      <p>\n        Assim que o JavaScript encontra o <strong>return</strong> ele para a execução do código da função e retorna o resultado da expressão, ou o valor\n        que estiver à sua frente.\n      </p>\n      <pre>\n      <code class="javascript hljs">\n          function mais_dois(x) {{\'{\'}}\n\n              return x + 2; // Retorna o resulta de x + 2\n\n              var y = x + 4; // Não vai executar, está abaixo do return\n          {{\'}\'}}\n\n      </code>\n    </pre>\n      <p>\n        Só se dissermos que o valor de x passa a ser o valor de retorno da função é que, efetivamente, lhe mudamos o valor.\n        Para chamar uma função, basta escrever o nome dela seguido de <strong>()</strong> e dentro dos mesmos passar os argumentos \n        <strong>mais_dois(x)</strong>, por exemplo.\n      </p>\n      <p>\n        Porquê usar funções? Porque podemos reutilizar código. Basta definir uma vez para poder usar várias vezes e basta passar \n        argumentos diferentes para obter resultados diferentes.\n      </p>\n    </ion-col>\n  </ion-row>\n</ion-content>\n'/*ion-inline-end:"C:\Users\nuno1\OneDrive\Documentos\Estudar\3º ano\1º Semestre\PCM\trabalhos\rocket\src\pages\functions\functions.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-    ], FunctionsPage);
-    return FunctionsPage;
-}());
-
-//# sourceMappingURL=functions.js.map
-
-/***/ }),
-
-/***/ 107:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConditionalsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var ConditionalsPage = /** @class */ (function () {
-    function ConditionalsPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    ConditionalsPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad ConditionalsPage');
-        hljs.initHighlighting.called = false;
-        hljs.initHighlighting();
-    };
-    ConditionalsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-conditionals',template:/*ion-inline-start:"C:\Users\nuno1\OneDrive\Documentos\Estudar\3º ano\1º Semestre\PCM\trabalhos\rocket\src\pages\conditionals\conditionals.html"*/'<!--\n  Generated template for the ConditionalsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-content padding>\n  <ion-row>\n    <ion-col col-12>\n        <h1>5. Condicionais</h1>\n    </ion-col>\n  </ion-row>\n  <ion-row justify-content-center align-items-center>\n    <ion-col col-12>\n      <p>\n        Estruturas condicionais são usadas para realizar diferentes ações com base num decisão. Imagina que vais a uma discoteca e te\n        perguntam a idade à entrada. Com base na tua idade podem ser tomadas duas decisões: se fores maior de idade, podes entrar; caso \n        contrário, não o podes fazer. Ou seja, com base num condição booleana ( uma condição que resulta em verdade ou falso ) é tomada \n        uma ação. Para isso temos a seguinte estrutura. Aqui vão dar jeito os conhecimentos de operadores lógicos e de comparação de que \n        falámos à pouco.\n      </p>\n      <pre>\n        <code class="javascript hljs">\n            var idade = 18;\n\n            if (idade >= 18) {{\'{\'}}\n\n              console.log("Podes entrar");\n            {{\'}\'}}\n\n            else {{\'{\'}}\n\n              console.log("Vai para casa puto!");\n            {{\'}\'}}\n        </code>\n      </pre>\n      <p>\n        <strong>idade >= 18</strong> é a condição que te vai permitir entrar ou não na discoteca. Lembra-te, a expressão que está entre <strong>()</strong> na cláusula <strong>if</strong> tem \n        de resultar sempre em <strong>true</strong> ou <strong>false</strong>. Se o que está entre <strong>()</strong> for verdade, o que está \n        dentro das chavetas do <strong>if</strong> executa. Caso contrário, o que está dentro das chavetas do <strong>else</strong> irá executar.\n      </p>\n      <p>E se quisermos ter mais condições de decisão? Bem basta a acrescentar um cláusula <strong>else if() {{\'{\'}}{{\'}\'}}</strong></p>\n      <pre>\n          <code class="javascript hljs">\n              var idade = 18;\n  \n              if (idade >= 18) {{\'{\'}}\n  \n                console.log("Podes entrar");\n              {{\'}\'}}\n\n              else if (idade > 15 && idade <= 17) {{\'{\'}}\n  \n                console.log("Podes entrar acompanhado por um adulto");\n              {{\'}\'}}\n  \n              else {{\'{\'}}\n  \n                console.log("Vai para casa puto!");\n              {{\'}\'}}\n          </code>\n        </pre>\n    </ion-col>\n  </ion-row>\n</ion-content>\n'/*ion-inline-end:"C:\Users\nuno1\OneDrive\Documentos\Estudar\3º ano\1º Semestre\PCM\trabalhos\rocket\src\pages\conditionals\conditionals.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-    ], ConditionalsPage);
-    return ConditionalsPage;
-}());
-
-//# sourceMappingURL=conditionals.js.map
-
-/***/ }),
-
-/***/ 108:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OperatorsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
@@ -378,7 +292,48 @@ var OperatorsPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 118:
+/***/ 107:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TypesPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var TypesPage = /** @class */ (function () {
+    function TypesPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    TypesPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad TypesPage');
+        hljs.initHighlighting.called = false;
+        hljs.initHighlighting();
+    };
+    TypesPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-types',template:/*ion-inline-start:"C:\Users\nuno1\OneDrive\Documentos\Estudar\3º ano\1º Semestre\PCM\trabalhos\rocket\src\pages\types\types.html"*/'<!--\n  Generated template for the TypesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-content padding>\n  <ion-row>\n    <ion-col col-12>\n        <h1>2. Tipos de Dados</h1>\n    </ion-col>\n  </ion-row>\n    <ion-row justify-content-center align-items-center>\n      <ion-col col-12>\n        \n          <p>\n            Antes de passarmos às operações que se podem fazer com as variáveis que aprendemos no capitulo anterior, precisamos \n            de esclarecer o conceito de tipos de variável. Os tipos permitem-nos distinguir variáveis e as operações que se podem \n            realizar sobre elas. Isto é, as operações que podemos fazer com</p>\n            <pre><code class="javascript hljs">var x = 1;</code></pre>\n            <p> que é um Number, são diferentes das operações que se fazem com</p>\n            <pre><code class="javascript hljs">var x = \'1\';</code></pre>\n            <p>que é uma String.</p>\n        \n          <p>\n            Posto isto, podemos distinguir os seguintes tipos de variáveis:</p>\n            <pre><code class="javascript hljs">\n              var x = 1;\n              var y = 1.2;\n              var z = -1;\n              var w = -1.2;\n\n              var t = 2e5; // Notação científica\n            </code></pre> \n            <p>Aqui as variáveis x, y, z e w são do tipo <strong>Number</strong>. O tipo <strong>Number</strong> engloda todos os tipos numéricos, ou seja, todos os números\n            inteiros e reais, positivos ou negativos. </p> \n          \n            <pre><code class="javascript hljs">\n                var x = \'Isto é uma string\';\n                var y = \'a\';\n                var z = \'\';\n            </code> </pre> \n\n           <p>As variáveis x, y e z são <strong>String</strong>, isto é, são aquilo a que chamamos texto. Uma <strong>String</strong> pode ser um conjunto de \n            vários caracteres, um único caracter ou até mesmo vazia. </p> \n            \n           <pre> <code class="javascript hljs">\n                var x = true;\n                var y = false;\n            </code> </pre>\n\n           <p> As variáveis x e y são do tipo <strong>Boolean</strong>, ou seja, têm um valor de verdade ( true ou false ) associado. Este tipo \n            de variáveis é principalmente em decisão condicional, como veremos mais à frente. </p>\n            \n\n           <pre> <code class="javascript hljs">\n              var x;\n            </code> </pre>\n\n           <p> Neste caso, a variável x tem tipo <strong>Undefined</strong>, trocando por miúdos, a variável x existe mas não tem valor associado.\n            Mais simples ainda, existe uma caixa com o nome x mas não tem nada guardado. </p>\n            \n           <pre> <code class="javascript hljs">\n              var x = "E-Learning javascript";\n              x = null;\n            </code> </pre>\n\n           <p> O tipo <strong>Null</strong> indica que a variável não existe, posto de outra forma, <strong>Null</strong> designa o vazio e não existência. Conforme \n            está escrito acima, podemos fazer com que uma variável deixe de existir atribuindo-lhe o valor null. </p>\n            \n           <pre> <code class="javascript hljs">\n                var lista = [\'ovos\', \'bananas\', \'fiambre\'];\n            </code> </pre>\n\n           <p> O tipo <strong>Array</strong> serve para guardar numa variável uma lista de elementos, desde que esses elementos\n            sejam todos do mesmo tipo, isto é, não podemos guardar elementos com o tipo <strong>Number</strong> e elementos com \n            o tipo <strong>String</strong> na mesma lista. </p>\n\n           <pre> <code class="javascript hljs">\n              var carro = {{\'{\'}} portas: 5, lugares: 5, velocidade_máxima: 200, matricula: \'AB-12-CD\' {{\'}\'}};\n            </code> </pre>\n\n            <p>Há ainda mais um tipo, o tipo <strong>Object</strong>, que server para representar, como o nome indica, objectos do mundo real.\n            Não te preocupes se não percebeste o que isto significa, os objectos terão um capitulo específico. Por agora fica \n            com esta definição.</p>\n\n           <p>Como podes ver, pelo exemplo do tipo <strong>Null</strong>, os tipos em JavaScript são dinâmicos, uma variável\n            num dado instante tem um tipo mas pode ser modificado. </p>\n\n           <pre><code class="javascript hljs">\n                var x = 10; // x é um Number\n                x = \'Tipo String\'; // x é uma String\n            </code> </pre> \n            \n           <p> Para verificarmos o tipo de uma variável, é aconselhável usar a função <strong>typeof</strong>() como segue. </p>\n\n           <pre> <code class="javascript hljs">\n                var x = 10; // x é um Number\n                console.log(typeof(x)); // Number\n\n                var y = \'Dezembro\';\n                console.log(typeof(y)); // String\n\n                var z = true;\n                console.log(typeof(z)); // Boolean\n            </code> </pre> \n      </ion-col>\n    </ion-row>\n  \n</ion-content>\n'/*ion-inline-end:"C:\Users\nuno1\OneDrive\Documentos\Estudar\3º ano\1º Semestre\PCM\trabalhos\rocket\src\pages\types\types.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+    ], TypesPage);
+    return TypesPage;
+}());
+
+//# sourceMappingURL=types.js.map
+
+/***/ }),
+
+/***/ 117:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -391,32 +346,28 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 118;
+webpackEmptyAsyncContext.id = 117;
 
 /***/ }),
 
-/***/ 159:
+/***/ 158:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/arith/arith.module": [
-		280,
-		9
+		277,
+		8
 	],
 	"../pages/arrays/arrays.module": [
 		278,
-		8
-	],
-	"../pages/classes/classes.module": [
-		279,
 		7
 	],
 	"../pages/conditionals/conditionals.module": [
-		286,
+		279,
 		6
 	],
 	"../pages/functions/functions.module": [
-		285,
+		280,
 		5
 	],
 	"../pages/loops/loops.module": [
@@ -428,15 +379,15 @@ var map = {
 		3
 	],
 	"../pages/operators/operators.module": [
-		287,
+		284,
 		2
 	],
 	"../pages/types/types.module": [
-		283,
+		285,
 		1
 	],
 	"../pages/vars/vars.module": [
-		284,
+		283,
 		0
 	]
 };
@@ -451,12 +402,12 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 159;
+webpackAsyncContext.id = 158;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 203:
+/***/ 202:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -464,15 +415,14 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__vars_vars__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__arith_arith__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__arrays_arrays__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__classes_classes__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__conditionals_conditionals__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__functions_functions__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__loops_loops__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__objects_objects__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__operators_operators__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__types_types__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__arith_arith__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__arrays_arrays__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__conditionals_conditionals__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__functions_functions__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__loops_loops__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__objects_objects__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__operators_operators__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__types_types__ = __webpack_require__(107);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -493,20 +443,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 var HomePage = /** @class */ (function () {
     function HomePage(navCtrl) {
         this.navCtrl = navCtrl;
         this.arith = __WEBPACK_IMPORTED_MODULE_3__arith_arith__["a" /* ArithPage */];
         this.vars = __WEBPACK_IMPORTED_MODULE_2__vars_vars__["a" /* VarsPage */];
         this.arrays = __WEBPACK_IMPORTED_MODULE_4__arrays_arrays__["a" /* ArraysPage */];
-        this.classes = __WEBPACK_IMPORTED_MODULE_5__classes_classes__["a" /* ClassesPage */];
-        this.conditionals = __WEBPACK_IMPORTED_MODULE_6__conditionals_conditionals__["a" /* ConditionalsPage */];
-        this.functions = __WEBPACK_IMPORTED_MODULE_7__functions_functions__["a" /* FunctionsPage */];
-        this.loops = __WEBPACK_IMPORTED_MODULE_8__loops_loops__["a" /* LoopsPage */];
-        this.objects = __WEBPACK_IMPORTED_MODULE_9__objects_objects__["a" /* ObjectsPage */];
-        this.operators = __WEBPACK_IMPORTED_MODULE_10__operators_operators__["a" /* OperatorsPage */];
-        this.types = __WEBPACK_IMPORTED_MODULE_11__types_types__["a" /* TypesPage */];
+        this.conditionals = __WEBPACK_IMPORTED_MODULE_5__conditionals_conditionals__["a" /* ConditionalsPage */];
+        this.functions = __WEBPACK_IMPORTED_MODULE_6__functions_functions__["a" /* FunctionsPage */];
+        this.loops = __WEBPACK_IMPORTED_MODULE_7__loops_loops__["a" /* LoopsPage */];
+        this.objects = __WEBPACK_IMPORTED_MODULE_8__objects_objects__["a" /* ObjectsPage */];
+        this.operators = __WEBPACK_IMPORTED_MODULE_9__operators_operators__["a" /* OperatorsPage */];
+        this.types = __WEBPACK_IMPORTED_MODULE_10__types_types__["a" /* TypesPage */];
     }
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
@@ -521,13 +469,13 @@ var HomePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 204:
+/***/ 203:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(227);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(226);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -535,7 +483,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 227:
+/***/ 226:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -543,27 +491,25 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(277);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_vars_vars__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_arith_arith__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_arrays_arrays__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_classes_classes__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_conditionals_conditionals__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_functions_functions__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_loops_loops__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_objects_objects__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_operators_operators__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_types_types__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_arith_arith__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_arrays_arrays__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_conditionals_conditionals__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_functions_functions__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_loops_loops__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_objects_objects__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_operators_operators__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_types_types__ = __webpack_require__(107);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
 
 
 
@@ -591,28 +537,26 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_7__pages_vars_vars__["a" /* VarsPage */],
                 __WEBPACK_IMPORTED_MODULE_8__pages_arith_arith__["a" /* ArithPage */],
                 __WEBPACK_IMPORTED_MODULE_9__pages_arrays_arrays__["a" /* ArraysPage */],
-                __WEBPACK_IMPORTED_MODULE_10__pages_classes_classes__["a" /* ClassesPage */],
-                __WEBPACK_IMPORTED_MODULE_11__pages_conditionals_conditionals__["a" /* ConditionalsPage */],
-                __WEBPACK_IMPORTED_MODULE_12__pages_functions_functions__["a" /* FunctionsPage */],
-                __WEBPACK_IMPORTED_MODULE_13__pages_loops_loops__["a" /* LoopsPage */],
-                __WEBPACK_IMPORTED_MODULE_14__pages_objects_objects__["a" /* ObjectsPage */],
-                __WEBPACK_IMPORTED_MODULE_15__pages_operators_operators__["a" /* OperatorsPage */],
-                __WEBPACK_IMPORTED_MODULE_16__pages_types_types__["a" /* TypesPage */]
+                __WEBPACK_IMPORTED_MODULE_10__pages_conditionals_conditionals__["a" /* ConditionalsPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_functions_functions__["a" /* FunctionsPage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_loops_loops__["a" /* LoopsPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_objects_objects__["a" /* ObjectsPage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_operators_operators__["a" /* OperatorsPage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_types_types__["a" /* TypesPage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/arrays/arrays.module#ArraysPageModule', name: 'ArraysPage', segment: 'arrays', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/classes/classes.module#ClassesPageModule', name: 'ClassesPage', segment: 'classes', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/arith/arith.module#ArithPageModule', name: 'ArithPage', segment: 'arith', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/arrays/arrays.module#ArraysPageModule', name: 'ArraysPage', segment: 'arrays', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/conditionals/conditionals.module#ConditionalsPageModule', name: 'ConditionalsPage', segment: 'conditionals', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/functions/functions.module#FunctionsPageModule', name: 'FunctionsPage', segment: 'functions', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/loops/loops.module#LoopsPageModule', name: 'LoopsPage', segment: 'loops', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/objects/objects.module#ObjectsPageModule', name: 'ObjectsPage', segment: 'objects', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/types/types.module#TypesPageModule', name: 'TypesPage', segment: 'types', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/vars/vars.module#VarsPageModule', name: 'VarsPage', segment: 'vars', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/functions/functions.module#FunctionsPageModule', name: 'FunctionsPage', segment: 'functions', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/conditionals/conditionals.module#ConditionalsPageModule', name: 'ConditionalsPage', segment: 'conditionals', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/operators/operators.module#OperatorsPageModule', name: 'OperatorsPage', segment: 'operators', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/operators/operators.module#OperatorsPageModule', name: 'OperatorsPage', segment: 'operators', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/types/types.module#TypesPageModule', name: 'TypesPage', segment: 'types', priority: 'low', defaultHistory: [] }
                     ]
                 })
             ],
@@ -623,13 +567,12 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_7__pages_vars_vars__["a" /* VarsPage */],
                 __WEBPACK_IMPORTED_MODULE_8__pages_arith_arith__["a" /* ArithPage */],
                 __WEBPACK_IMPORTED_MODULE_9__pages_arrays_arrays__["a" /* ArraysPage */],
-                __WEBPACK_IMPORTED_MODULE_10__pages_classes_classes__["a" /* ClassesPage */],
-                __WEBPACK_IMPORTED_MODULE_11__pages_conditionals_conditionals__["a" /* ConditionalsPage */],
-                __WEBPACK_IMPORTED_MODULE_12__pages_functions_functions__["a" /* FunctionsPage */],
-                __WEBPACK_IMPORTED_MODULE_13__pages_loops_loops__["a" /* LoopsPage */],
-                __WEBPACK_IMPORTED_MODULE_14__pages_objects_objects__["a" /* ObjectsPage */],
-                __WEBPACK_IMPORTED_MODULE_15__pages_operators_operators__["a" /* OperatorsPage */],
-                __WEBPACK_IMPORTED_MODULE_16__pages_types_types__["a" /* TypesPage */]
+                __WEBPACK_IMPORTED_MODULE_10__pages_conditionals_conditionals__["a" /* ConditionalsPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_functions_functions__["a" /* FunctionsPage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_loops_loops__["a" /* LoopsPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_objects_objects__["a" /* ObjectsPage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_operators_operators__["a" /* OperatorsPage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_types_types__["a" /* TypesPage */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
@@ -645,16 +588,16 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 277:
+/***/ 276:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(202);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -695,7 +638,7 @@ var MyApp = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ArraysPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ArithPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -709,32 +652,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-/**
- * Generated class for the ArraysPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var ArraysPage = /** @class */ (function () {
-    function ArraysPage(navCtrl, navParams) {
+var ArithPage = /** @class */ (function () {
+    function ArithPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    ArraysPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad ArraysPage');
+    ArithPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ArithPage');
+        hljs.initHighlighting.called = false;
+        hljs.initHighlighting();
     };
-    ArraysPage = __decorate([
+    ArithPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-arrays',template:/*ion-inline-start:"C:\Users\nuno1\OneDrive\Documentos\Estudar\3º ano\1º Semestre\PCM\trabalhos\rocket\src\pages\arrays\arrays.html"*/'<!--\n  Generated template for the ArraysPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>3.Arrays</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\nuno1\OneDrive\Documentos\Estudar\3º ano\1º Semestre\PCM\trabalhos\rocket\src\pages\arrays\arrays.html"*/,
+            selector: 'page-arith',template:/*ion-inline-start:"C:\Users\nuno1\OneDrive\Documentos\Estudar\3º ano\1º Semestre\PCM\trabalhos\rocket\src\pages\arith\arith.html"*/'<!--\n  Generated template for the ArithPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-content padding>\n  <ion-row class="grid-header">\n    <ion-col col-12>\n        <h1>3. Operações Aritméticas</h1>\n    </ion-col>\n  </ion-row>\n  <ion-row class="grid-header" justify-content-center align-items-center>\n    <ion-col col-12>\n      <p>\n        Guardar valores numa variável é fixe, mas mais fixe ainda é poder fazer operações usando-os e manipulando-os para \n        atingir os objetivos do nosso programa. O que podemos fazer com eles? Bem, uma parte da resposta está na tabela abaixo. \n        Para obter o resto das operações, passa para a página seguinte.\n      </p>\n    </ion-col>\n  </ion-row>\n  <ion-grid>\n    <ion-row>\n      <ion-col col-6>Operador</ion-col>\n      <ion-col col-6>Descrição</ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-6>+</ion-col>\n      <ion-col col-6>Soma</ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-6>-</ion-col>\n      <ion-col col-6>Subtração</ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-6>*</ion-col>\n      <ion-col col-6>Multiplicação</ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-6>**</ion-col>\n      <ion-col col-6>Exponenciação</ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-6>/</ion-col>\n      <ion-col col-6>Divisão</ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-6>%</ion-col>\n      <ion-col col-6>Módulo ou resto de divisão</ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-6>++</ion-col>\n      <ion-col col-6>Incremento (Somar 1)</ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col col-6>--</ion-col>\n      <ion-col col-6>Decremento (Subtrair 1)</ion-col>\n    </ion-row>\n  </ion-grid>\n  <ion-grid>\n    <ion-row class="grid-header">\n      <ion-col col-12>\n        <h2>Exemplos</h2>\n      </ion-col>\n    </ion-row>\n    <ion-row class="grid-header grid-code" justify-content-center align-items-center>\n      <ion-col col-12>\n        <pre>\n          <code class="javascript hljs">\n            var x = 10;\n            var y = 5;\n\n            var z = x + y; // z = 15\n            var w = x - y; // w = 5\n\n            var t = x * y; // t = 50\n            var e = x ** y; // e = 100000\n\n            var d = x / y; // d = 2\n            var m = x % y; // m = 0\n\n            var n = x++; // n = 11\n            var i = y--; // i = 4\n\n          </code>\n        </pre>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"C:\Users\nuno1\OneDrive\Documentos\Estudar\3º ano\1º Semestre\PCM\trabalhos\rocket\src\pages\arith\arith.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-    ], ArraysPage);
-    return ArraysPage;
+    ], ArithPage);
+    return ArithPage;
 }());
 
-//# sourceMappingURL=arrays.js.map
+//# sourceMappingURL=arith.js.map
 
 /***/ })
 
-},[204]);
+},[203]);
 //# sourceMappingURL=main.js.map

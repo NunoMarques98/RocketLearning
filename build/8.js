@@ -1,14 +1,14 @@
 webpackJsonp([8],{
 
-/***/ 278:
+/***/ 277:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArraysPageModule", function() { return ArraysPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArithPageModule", function() { return ArithPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__arrays__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__arith__ = __webpack_require__(99);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ArraysPageModule = /** @class */ (function () {
-    function ArraysPageModule() {
+var ArithPageModule = /** @class */ (function () {
+    function ArithPageModule() {
     }
-    ArraysPageModule = __decorate([
+    ArithPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__arrays__["a" /* ArraysPage */],
+                __WEBPACK_IMPORTED_MODULE_2__arith__["a" /* ArithPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__arrays__["a" /* ArraysPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__arith__["a" /* ArithPage */]),
             ],
         })
-    ], ArraysPageModule);
-    return ArraysPageModule;
+    ], ArithPageModule);
+    return ArithPageModule;
 }());
 
-//# sourceMappingURL=arrays.module.js.map
+//# sourceMappingURL=arith.module.js.map
 
 /***/ })
 

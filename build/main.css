@@ -25756,6 +25756,15 @@ page-arith ion-row.grid-code {
   text-align: left;
 }
 
+page-arrays h1 {
+  color: #00ffe9;
+  font-size: 35px;
+}
+
+page-arrays h2 {
+  margin-bottom: 30px;
+}
+
 page-conditionals h1 {
   color: #00ffe9;
   font-size: 35px;
