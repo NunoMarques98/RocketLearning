@@ -25719,6 +25719,11 @@ p {
   font-family: 'Lato', sans-serif !important;
 }
 
+page-arith h1 {
+  color: #00ffe9;
+  font-size: 35px;
+}
+
 page-arith h2 {
   margin-bottom: 30px;
 }
@@ -25745,6 +25750,11 @@ page-arith ion-row.grid-code {
   text-align: left;
 }
 
+page-operators h1 {
+  color: #00ffe9;
+  font-size: 35px;
+}
+
 page-operators h2 {
   margin-bottom: 30px;
 }
@@ -25761,6 +25771,14 @@ page-operators ion-row:first-child {
 
 page-operators ion-row {
   background-color: #191919;
+}
+
+page-operators ion-row.grid-header {
+  background: none;
+}
+
+page-operators ion-row.grid-code {
+  text-align: left;
 }
 
 page-vars h1 {
