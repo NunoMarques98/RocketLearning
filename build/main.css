@@ -25714,6 +25714,8 @@ pre {
 }
 
 p {
+  width: 80%;
+  margin: 20px auto !important;
   text-align: justify !important;
   line-height: 1.8;
   font-family: 'Lato', sans-serif !important;
