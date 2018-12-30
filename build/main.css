@@ -25792,6 +25792,15 @@ page-loops h2 {
   margin-bottom: 30px;
 }
 
+page-objects h1 {
+  color: #00ffe9;
+  font-size: 35px;
+}
+
+page-objects h2 {
+  margin-bottom: 30px;
+}
+
 page-operators h1 {
   color: #00ffe9;
   font-size: 35px;
